@@ -1,15 +1,7 @@
 import streamlit as st
-
-def wrong():
-    st.write("Try again")
-
-def answers(options):
-    for label, is_correct in options:
-        if st.button(label):
-            if is_correct:
-                st.success("✅ Right answer!")
-            else:
-                wrong()
+from answer import answers
+from answer import strans
+from answer import wrong
 
 
 st.write("What is the correct way to assign a value to a variable?")
@@ -27,3 +19,6 @@ options2 = [
     ("4. idk", False),
 ]
 answers(options2)
+
+st.write("What is the data type of x = 'Hello'?")
+strans("str")
