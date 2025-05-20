@@ -18,4 +18,4 @@ options2 = [
 answers(options2)
 
 st.write("What is the data type of x = 'Hello'?")
-strans("str")
+strans(["str", "String", "string"])
