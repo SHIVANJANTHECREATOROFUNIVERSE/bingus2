@@ -1,8 +1,5 @@
 import streamlit as st
-from answer import answers
-from answer import strans
-from answer import wrong
-
+from pages.answer import answers, strans, wrong
 
 st.write("What is the correct way to assign a value to a variable?")
 options1 = [("1. x='10'", False),
